@@ -6,6 +6,7 @@ import mainImage from "../../images/register/main.png";
 import { Stack } from "@mui/system";
 import GradientInput from "../../components/general/gradientInput";
 
+
 export default function RegisterPage(props) {
   return (
     <Box
@@ -115,7 +116,7 @@ export default function RegisterPage(props) {
                 Create Account
               </Button>
             </Box>
-            
+
             <Box mt={{ xs: "11px", sm: "18px", md: "1.86vw" }} textAlign={"center"}>
               <Typography>
                 Already have an account? <Button sx={{ padding: 0, fontWeight: "700" }}> Login </Button>
