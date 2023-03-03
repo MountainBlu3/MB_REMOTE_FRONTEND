@@ -4,11 +4,11 @@ import bottomBg from "../../images/register/bottomBg.png";
 import logo from "../../images/register/logo.png";
 import mainImage from "../../images/register/main.png";
 import { Stack } from "@mui/system";
-import GradientInput from "../../components/general/gradientInput";
 import {Link} from 'react-router-dom'
+import GradientInput from "../../components/general/gradientInput";
 
 
-export default function RegisterPage(props) {
+export default function LoginPage(props) {
   return (
     <Box
       style={{
@@ -52,12 +52,12 @@ export default function RegisterPage(props) {
             >
               <img src={logo} alt="react_image" width="100%" height={"100%"} />
             </Box>
-            <Box mt={{ xs: "37px", sm: "59px", md: "6.14vw" }}>
+            {/* <Box mt={{ xs: "37px", sm: "59px", md: "6.14vw" }}>
               <Typography color="primary" textAlign="center" fontWeight="700" fontSize="1.46em">
                 MOUNTAIN BLUE
               </Typography>
               <Typography fontWeight={"500"}> (Artificial Intelligence/Information Technology/Block chain) </Typography>
-            </Box>
+            </Box> */}
           </Stack>
           <Box
             pr={{ xs: "16px", sm: "23px", md: "2.43vw" }}
@@ -65,7 +65,7 @@ export default function RegisterPage(props) {
             pl={{ xs: "16px", sm: "57px", md: "5.93vw" }}
           >
             <Box width="100%" maxWidth={{ sm: "407px", md: "42.50vw" }} height={{ sm: "384px", md: "40.07vw" }}>
-              <img className="img1" src={mainImage} alt="react_image" width="75%" height={"70%"}/>
+              <img className="img2" src={mainImage} alt="react_image" width="75%" height={"70%"} />
             </Box>
           </Box>
         </Grid>
@@ -91,15 +91,12 @@ export default function RegisterPage(props) {
               fontWeight="700"
               fontSize="1.46em"
             >
-              Create Account
+              Log in
             </Typography>
 
             <Stack gap={{ xs: "13px", sm: "21px", md: "2.14vw" }}>
-              <GradientInput variant="outlined" placeholder="Full name" />
               <GradientInput variant="outlined" placeholder="E-mail" />
-              <GradientInput variant="outlined" placeholder="Phone" />
               <GradientInput variant="outlined" type={"password"} placeholder="Password" />
-              <GradientInput variant="outlined" type={"password"} placeholder="Confirm password" />
             </Stack>
 
             <Box mt={{ xs: "34px", sm: "55px", md: "5.71vw" }}>
@@ -114,18 +111,22 @@ export default function RegisterPage(props) {
                   fontWeight: "700",
                 }}
               >
-                Create Account
+                Log in
               </Button>
             </Box>
+
             <Box mt={{ xs: "11px", sm: "18px", md: "1.86vw" }} textAlign={"center"}>
               <Typography>
-                Already have an account? <Button sx={{ padding: 0, fontWeight: "700" }}> Login </Button>
+                 Do not have an account? <Button sx={{ padding: 0, fontWeight: "700" }}> Register </Button>
+              </Typography>
+              <Typography sx={{ fontSize: "14px", fontWeight: "700" }}>
+                 Forgot password? <Button sx={{ fontSize: "15px", padding: 0, fontWeight: "700" }}> click here </Button>
               </Typography>
             </Box>
           </Box>
         </Grid>
       </Grid>
-      <Box
+      {/* <Box
         sx={{
           position: "absolute",
           width: "100%",
@@ -138,7 +139,7 @@ export default function RegisterPage(props) {
         <Box sx={{ mx: "auto" }}>
           <img src={bottomBg} alt="react_image" width="100%" height={"100%"} />
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
