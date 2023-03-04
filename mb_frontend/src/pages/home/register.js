@@ -5,8 +5,7 @@ import logo from "../../images/register/logo.png";
 import mainImage from "../../images/register/main.png";
 import { Stack } from "@mui/system";
 import GradientInput from "../../components/general/gradientInput";
-import {Link} from 'react-router-dom'
-
+import { Link } from "react-router-dom";
 
 export default function RegisterPage(props) {
   return (
@@ -37,7 +36,7 @@ export default function RegisterPage(props) {
           <img src={topBg} alt="react_image" width="100%" height={"100%"} />
         </Box>
       </Box>
-      <Grid container style={{ minHeight: "100vh" }}>
+      <Grid container style={{ minHeight: "100vh", position: "relative", zIndex: 2 }}>
         <Grid item xs={12} sm={6}>
           <Stack
             pl={{ xs: "16px", sm: "66px", md: "6.93vw" }}
@@ -65,7 +64,7 @@ export default function RegisterPage(props) {
             pl={{ xs: "16px", sm: "57px", md: "5.93vw" }}
           >
             <Box width="100%" maxWidth={{ sm: "407px", md: "42.50vw" }} height={{ sm: "384px", md: "40.07vw" }}>
-              <img className="img1" src={mainImage} alt="react_image" width="75%" height={"70%"}/>
+              <img className="img1" src={mainImage} alt="react_image" width="75%" height={"70%"} />
             </Box>
           </Box>
         </Grid>
@@ -119,7 +118,10 @@ export default function RegisterPage(props) {
             </Box>
             <Box mt={{ xs: "11px", sm: "18px", md: "1.86vw" }} textAlign={"center"}>
               <Typography>
-                Already have an account? <Button sx={{ padding: 0, fontWeight: "700" }}> Login </Button>
+                Already have an account?
+                <Link to={"/login"}>
+                  <Button sx={{ padding: 0, fontWeight: "700" }}> Login </Button>
+                </Link>
               </Typography>
             </Box>
           </Box>
@@ -129,6 +131,7 @@ export default function RegisterPage(props) {
         sx={{
           position: "absolute",
           width: "100%",
+          zIndex: 1,
           mixBlendMode: "multiply",
           bottom: { xs: "-35px", sm: "-55px", md: "-5.79vw" },
           left: { xs: "-29px", sm: "-47px", md: "-4.86vw" },
