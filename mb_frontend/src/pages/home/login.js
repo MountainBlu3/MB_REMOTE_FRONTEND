@@ -4,9 +4,8 @@ import bottomBg from "../../images/register/bottomBg.png";
 import logo from "../../images/register/logo.png";
 import mainImage from "../../images/register/main.png";
 import { Stack } from "@mui/system";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import GradientInput from "../../components/general/gradientInput";
-
 
 export default function LoginPage(props) {
   return (
@@ -117,10 +116,13 @@ export default function LoginPage(props) {
 
             <Box mt={{ xs: "11px", sm: "18px", md: "1.86vw" }} textAlign={"center"}>
               <Typography>
-                 Do not have an account? <Button sx={{ padding: 0, fontWeight: "700" }}> Register </Button>
+                Do not have an account?
+                <Link to={"/"}>
+                  <Button sx={{ padding: 0, fontWeight: "700" }}> Register </Button>
+                </Link>
               </Typography>
               <Typography sx={{ fontSize: "14px", fontWeight: "700" }}>
-                 Forgot password? <Button sx={{ fontSize: "15px", padding: 0, fontWeight: "700" }}> click here </Button>
+                Forgot password? <Button sx={{ fontSize: "15px", padding: 0, fontWeight: "700" }}> click here </Button>
               </Typography>
             </Box>
           </Box>
