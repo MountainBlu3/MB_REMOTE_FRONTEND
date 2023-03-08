@@ -6,9 +6,22 @@ import mainImage from "../../images/register/main.png";
 import { Stack } from "@mui/system";
 import { Link } from "react-router-dom";
 import GradientInput from "../../components/general/gradientInput";
+import { useState } from "react";
 
 export default function LoginPage(props) {
+  const [username, setUsername]= useState()
+  const [pass, setPass]= useState()
+
+  const handleInputChange= (event)=>{
+    if(event.target.name== 'email'){
+      setUsername(event.target.value)
+    }
+    if(event.target.name== 'pass'){
+      setPass(event.target.value)
+    }
+  }
   return (
+    <form>
     <Box
       style={{
         overflow: "hidden",
@@ -94,8 +107,8 @@ export default function LoginPage(props) {
             </Typography>
 
             <Stack gap={{ xs: "13px", sm: "21px", md: "2.14vw" }}>
-              <GradientInput variant="outlined" placeholder="E-mail" />
-              <GradientInput variant="outlined" type={"password"} placeholder="Password" />
+              <GradientInput onChange={handleInputChange} name="email" variant="outlined" placeholder="E-mail" />
+              <GradientInput onChange={handleInputChange} name="pass" variant="outlined" type={"password"} placeholder="Password" />
             </Stack>
 
             <Box mt={{ xs: "34px", sm: "55px", md: "5.71vw" }}>
@@ -143,5 +156,6 @@ export default function LoginPage(props) {
         </Box>
       </Box> */}
     </Box>
+    </form>
   );
 }
