@@ -119,7 +119,7 @@ export default function RegisterPage(props) {
             <Box mt={{ xs: "11px", sm: "18px", md: "1.86vw" }} textAlign={"center"}>
               <Typography>
                 Already have an account?
-                <Link to={"/login"}>
+                <Link to={"/auth/login"}>
                   <Button sx={{ padding: 0, fontWeight: "700" }}> Login </Button>
                 </Link>
               </Typography>

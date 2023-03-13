@@ -3,5 +3,7 @@ export const AppTheme = {
     primary: { main: "#14BCDA" },
     secondary: { main: "#111111" },
   },
-  typography: { button: { textTransform: "none" } },
+  typography: {
+    button: { textTransform: "none" },
+    fontFamily:["Montserrat","Helvetica", "sans-serif" ].join  },
 };
