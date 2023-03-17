@@ -3,7 +3,7 @@ import { authRoutes } from "./auth";
 import { chatRoutes } from "./chat";
 
 
-import { createBrowserRouter, createRoutesFromElements, Route} from "react-router-dom";
+import { createBrowserRouter} from "react-router-dom";
 
 export const routeConfig = createBrowserRouter(
   [
@@ -21,6 +21,6 @@ export const routeConfig = createBrowserRouter(
     path: "/chat",
     element: <HomeLayout />,
     children: chatRoutes,
-  },
+  }
 ]
 );

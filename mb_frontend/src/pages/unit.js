@@ -35,7 +35,7 @@ import {
   
     const handleFont = (value) => {
       const [desktop, mobile] = value.split(" ");
-      const em = mobile / 24
+      const em = mobile / 18
       // const em = 14 / (mobile *ta)
       const result = `{xs:"${(em).toFixed(2)}em", md:"${(desktop * md).toFixed(2)}vw"}`;
       setFont(result)

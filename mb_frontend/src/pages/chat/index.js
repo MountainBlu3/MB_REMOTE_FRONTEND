@@ -1,6 +1,7 @@
 import { Box, Container, Stack, TextField, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
+import ChatAppBar from "../../components/chat/appBar/index";
 import { icons } from "../../images/chat/images";
 const Chat = (props) => {
   const dpStyles = {
@@ -46,8 +47,7 @@ const Chat = (props) => {
         alignItems={"center"}
         gap={7}
         sx={{
-          background:
-            "linear-gradient(180deg, #02282F 26.76%, rgba(8, 7, 54, 0.9) 75.3%, #131313 91.61%)",
+          background: "linear-gradient(180deg, #02282F 26.76%, rgba(8, 7, 54, 0.9) 75.3%, #131313 91.61%)",
           height: "max-content",
           color: "white",
           padding: "32px 8px",
@@ -59,44 +59,16 @@ const Chat = (props) => {
           <img height={50} width={50} src={icons.logo} alt="" />
         </Link>
         <Link to="">
-          <img
-            title="Chats"
-            style={{ opacity: ".5" }}
-            height={25}
-            width={25}
-            src={icons.chats}
-            alt=""
-          />
+          <img title="Chats" style={{ opacity: ".5" }} height={25} width={25} src={icons.chats} alt="" />
         </Link>
         <Link to="./calls">
-          <img
-            title="Calls"
-            style={{ opacity: ".5" }}
-            height={25}
-            width={25}
-            src={icons.calls}
-            alt=""
-          />
+          <img title="Calls" style={{ opacity: ".5" }} height={25} width={25} src={icons.calls} alt="" />
         </Link>
         <Link to="./settings">
-          <img
-            title="Settings"
-            style={{ opacity: ".5" }}
-            height={25}
-            width={25}
-            src={icons.settings}
-            alt=""
-          />
+          <img title="Settings" style={{ opacity: ".5" }} height={25} width={25} src={icons.settings} alt="" />
         </Link>
         <Link to="">
-          <img
-            title="Log out"
-            style={{ opacity: ".5" }}
-            height={25}
-            width={25}
-            src={icons.exit}
-            alt=""
-          />
+          <img title="Log out" style={{ opacity: ".5" }} height={25} width={25} src={icons.exit} alt="" />
         </Link>
       </Stack>
       <Stack
@@ -111,13 +83,7 @@ const Chat = (props) => {
           padding: "32px 16px 0px 16px",
         }}
       >
-        <Typography
-          color="primary"
-          component="h1"
-          variant="h5"
-          fontWeight="500"
-          sx={{ marginInline: "5px" }}
-        >
+        <Typography color="primary" component="h1" variant="h5" fontWeight="500" sx={{ marginInline: "5px" }}>
           Messages
         </Typography>
 
@@ -133,10 +99,9 @@ const Chat = (props) => {
             ".css-122uw4s-MuiInputBase-root-MuiOutlinedInput-root ": {
               borderRadius: "10px !important",
             },
-            " & .css-1fm3ajf-MuiFormLabel-root-MuiInputLabel-root.Mui-focused":
-              {
-                color: "white",
-              },
+            " & .css-1fm3ajf-MuiFormLabel-root-MuiInputLabel-root.Mui-focused": {
+              color: "white",
+            },
             " .css-1d3z3hw-MuiOutlinedInput-notchedOutline": {
               background: "#14BCDA70",
             },
@@ -148,9 +113,7 @@ const Chat = (props) => {
           }}
         />
         <Stack direction="row" justifyContent="space-between">
-          <Typography sx={{ color: "#fff", fontWeight: "500" }}>
-            Online
-          </Typography>
+          <Typography sx={{ color: "#fff", fontWeight: "500" }}>Online</Typography>
           <Typography sx={{ color: "#fff", fontWeight: "500" }}>All</Typography>
         </Stack>
         <Stack
@@ -168,33 +131,15 @@ const Chat = (props) => {
           <img src={icons.dp} alt="" style={dpStyles} />
           <img src={icons.dp} alt="" style={dpStyles} />
         </Stack>
-        <Stack
-          gap={2.5}
-          sx={contactListStyles}
-        >
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+        <Stack gap={2.5} sx={contactListStyles}>
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -210,29 +155,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -248,29 +178,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -286,29 +201,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -324,29 +224,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -362,29 +247,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -400,29 +270,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -438,29 +293,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -476,29 +316,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -514,29 +339,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -552,29 +362,14 @@ const Chat = (props) => {
               20:20
             </Typography>
           </Stack>
-          <Stack
-            gap={2}
-            direction="row"
-            alignItems="center"
-            justifyContent="space-between"
-          >
+          <Stack gap={2} direction="row" alignItems="center" justifyContent="space-between">
             <Stack gap={2} direction="row" alignItems="center">
               <img src={icons.dp} alt="" style={dpStyles} />
               <Box>
-                <Typography
-                  color="#fff"
-                  fontSize={14}
-                  lineHeight={1.1}
-                  variant="h6"
-                >
+                <Typography color="#fff" fontSize={14} lineHeight={1.1} variant="h6">
                   Wisdom Adele
                 </Typography>
-                <Typography
-                  fontSize={14}
-                  color="#ffffff90"
-                  lineHeight={1.1}
-                  variant="body2"
-                >
+                <Typography fontSize={14} color="#ffffff90" lineHeight={1.1} variant="body2">
                   We outside
                 </Typography>
               </Box>
@@ -592,7 +387,8 @@ const Chat = (props) => {
           </Stack>
         </Stack>
       </Stack>
-      <Container sx={{ width: "auto" }}>
+      <Container disableGutters maxWidth={false}>
+        <ChatAppBar />
         {/* Chat conversations go here */}
       </Container>
     </Stack>
